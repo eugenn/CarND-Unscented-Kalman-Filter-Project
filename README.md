@@ -81,13 +81,25 @@ of CarND. If you are enrolled, see [the project page](https://classroom.udacity.
 for instructions and the project rubric.
 
 
-RMSE
-| Params A/YAW|	  30 	|  0.1	 |  0.3  |  0.28  |  0.48	| 0.5 	 | 0.51/0.5 |
-|:-----------:|:-------:| ------:|:-----:| ------:|:-------:| ------:|:--------:| 
-| X  		  | 0.096 	| 0.1250 | 0.063 | 0.0645 | 0.0611 	| 0.0612 | 0.0613   |
-| Y 		  | 0.096 	| 0.1352 | 0.091 | 0.093  | 0.0862 	| 0.086  | 0.0858   |
-| VX		  | 0.866 	| 0.417  | 0.33  | 0.34   | 0.3304 	| 0.3302 | 0.33011  |
-| VY		  | 0.968 	| 0.3164 | 0.22  | 0.2287 | 0.2139 	| 0.2135 | 0.2134   |
-| 																				
+## Conclusion
+I did some tests for investigating optimal value of YAW and A params. In the table below results of my tests. 
+In case when A and YAW = 0.5 the RMSE has smallest value.
+
+| Params A/YAW |   30    |  0.1   |  0.3  |  0.28  |  0.48   | 0.5    | 0.51/0.5 |
+| ------------ |:-------:|:------:|:-----:|:------:|:-------:|:------:| --------:| 
+| X            | 0.096   | 0.1250 | 0.063 | 0.0645 | 0.0611  | 0.0612 | 0.0613   |
+| Y            | 0.096   | 0.1352 | 0.091 | 0.093  | 0.0862  | 0.086  | 0.0858   |
+| VX           | 0.866   | 0.417  | 0.33  | 0.34   | 0.3304  | 0.3302 | 0.33011  |
+| VY           | 0.968   | 0.3164 | 0.22  | 0.2287 | 0.2139  | 0.2135 | 0.2134   |
+
+For visualising the NIS values I implemented the [GNUplot](http://gnuplot.sourceforge.net) library.
+
+A/YAW = 30
+![image1]
+
+A/YAW = 0.5
+![image2]
 
 
+[image1]: ./images/30.png
+[image2]: ./images/0_5.png
