@@ -95,9 +95,11 @@ In case when A and YAW = 0.5 the RMSE has smallest value.
 For visualising the NIS values I implemented the [GNUplot](http://gnuplot.sourceforge.net) library.
 
 A/YAW = 30
+
 ![image1]
 
 A/YAW = 0.5
+
 ![image2]
 
 
